@@ -1,7 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="eLanterna.MainPage">
+<ContentPage
+    x:Class="eLanterna.MainPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
 
     <StackLayout BackgroundColor="#09001c">
         <!--<Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
@@ -20,9 +21,21 @@
             </Label.FormattedText>
         </Label>-->
 
-        <Label HorizontalOptions="Center" VerticalOptions="Start" Text="Bun venit!" Margin="0, 50, 0 , 0" FontSize="50"/>
-        <StackLayout Orientation="Horizontal" HeightRequest="700">
-        <Button x:Name="btnLanterna" Text="Aprindere" VerticalOptions="Center" HorizontalOptions="CenterAndExpand" Padding="50, 40" FontSize="30" />
+        <Label
+            Margin="0,50,0,0"
+            FontSize="50"
+            HorizontalOptions="Center"
+            Text="Bun venit!"
+            VerticalOptions="Start" />
+        <StackLayout HeightRequest="700" Orientation="Horizontal">
+            <Button
+                x:Name="btnLanterna"
+                Padding="50,40"
+                FontSize="30"
+                HorizontalOptions="CenterAndExpand"
+                Text="Aprindere lanterna"
+                VerticalOptions="Center"
+                Clicked="btnLanterna_Clicked"/>
         </StackLayout>
 
     </StackLayout>
